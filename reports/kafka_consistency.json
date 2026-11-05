@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-11-05T22:50:38+08:00",
+  "mode": "local_file_bus",
+  "semantics": "at-least-once + idempotent consumer dedupe",
+  "topic": "ods-order-events",
+  "limit": 1000,
+  "producer_file": "data\\kafka\\producer.jsonl",
+  "consumer_file": "data\\kafka\\consumer_deduped.jsonl",
+  "raw_consumer": {
+    "produced": 1000,
+    "consumed_raw": 1001,
+    "consumed_unique": 1000,
+    "duplicate_messages": 1,
+    "missing": 0,
+    "missing_ids": [],
+    "extra": 0,
+    "extra_ids": [],
+    "checksum_mismatch": 0,
+    "checksum_mismatch_ids": [],
+    "order_preserved": true,
+    "lag": 0,
+    "passed": true
+  },
+  "idempotent_consumer": {
+    "produced": 1000,
+    "consumed_raw": 1000,
+    "consumed_unique": 1000,
+    "duplicate_messages": 0,
+    "missing": 0,
+    "missing_ids": [],
+    "extra": 0,
+    "extra_ids": [],
+    "checksum_mismatch": 0,
+    "checksum_mismatch_ids": [],
+    "order_preserved": true,
+    "lag": 0,
+    "passed": true
+  },
+  "duplicates_removed": 1,
+  "passed": true
+}

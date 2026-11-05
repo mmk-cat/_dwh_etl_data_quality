@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-11-05T22:50:38+08:00",
+  "detected_dirty_order_count": 34,
+  "quarantined_order_rows": 36,
+  "clean_order_rows": 1966,
+  "source_order_rows": 2002,
+  "dimension_fix": {
+    "product_id": "P0007",
+    "from": "家电",
+    "to": "数码"
+  },
+  "impact": {
+    "affected_dws_cells": 29,
+    "affected_pairs": [
+      "2026-05-01/家电",
+      "2026-05-02/家电",
+      "2026-05-02/食品",
+      "2026-05-03/家电",
+      "2026-05-03/美妆",
+      "2026-05-04/UNKNOWN",
+      "2026-05-04/数码",
+      "2026-05-04/食品",
+      "2026-05-05/UNKNOWN",
+      "2026-05-05/数码",
+      "2026-05-06/UNKNOWN",
+      "2026-05-06/食品",
+      "2026-05-07/数码",
+      "2026-05-07/服饰",
+      "2026-05-08/UNKNOWN",
+      "2026-05-09/UNKNOWN",
+      "2026-05-09/家电",
+      "2026-05-09/美妆",
+      "2026-05-10/数码",
+      "2026-05-11/UNKNOWN",
+      "2026-05-12/食品",
+      "2026-05-13/家电",
+      "2026-05-14/家电",
+      "2026-05-14/数码",
+      "2026-05-14/服饰",
+      "2026-05-14/美妆",
+      "2099-01-01/家电",
+      "INVALID/家电",
+      "INVALID/美妆"
+    ],
+    "affected_dates": [
+      "2026-05-01",
+      "2026-05-02",
+      "2026-05-03",
+      "2026-05-04",
+      "2026-05-05",
+      "2026-05-06",
+      "2026-05-07",
+      "2026-05-08",
+      "2026-05-09",
+      "2026-05-10",
+      "2026-05-11",
+      "2026-05-12",
+      "2026-05-13",
+      "2026-05-14",
+      "2099-01-01",
+      "INVALID"
+    ],
+    "dirty_amount": 71199.64
+  },
+  "gmv_before": 5129141.12,
+  "gmv_after_clean": 5057941.48,
+  "gmv_delta": 71199.64,
+  "warehouse_after": {
+    "generated_at": "2026-11-05T22:50:38+08:00",
+    "orders_path": "data\\quarantine\\ods_orders_clean.csv",
+    "warehouse_dir": "data\\warehouse_clean",
+    "source_order_rows": 1966,
+    "dwd_rows": 1966,
+    "dws_daily_rows": 70,
+    "dws_channel_rows": 42,
+    "dwd_gmv": 5057941.48,
+    "invalid_date_rows": 0,
+    "future_rows": 0,
+    "distinct_order_ids": 1966,
+    "dimension_rows": {
+      "dim_user": 80,
+      "dim_product": 30
+    }
+  },
+  "dq_after": {
+    "summary": {
+      "rules_total": 24,
+      "rules_triggered": 0,
+      "rules_passed": 24,
+      "dirty_order_count": 0,
+      "dimension_anomaly_count": 0,
+      "anomaly_rows": 0,
+      "metric_alert_count": 0
+    },
+    "metric_alerts": [],
+    "dirty_order_ids": [],
+    "dimension_keys": []
+  }
+}

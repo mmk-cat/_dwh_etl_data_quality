@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+data/warehouse_spark/
+data/warehouse_repeat/
+reports/allure-report/
+reports/*.html
+reports/junit.xml
+.env

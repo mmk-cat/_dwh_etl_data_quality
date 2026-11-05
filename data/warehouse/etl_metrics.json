@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-11-05T22:50:38+08:00",
+  "orders_path": "data\\raw\\ods_orders.csv",
+  "warehouse_dir": "data\\warehouse",
+  "source_order_rows": 2002,
+  "dwd_rows": 2002,
+  "dws_daily_rows": 79,
+  "dws_channel_rows": 44,
+  "dwd_gmv": 5129141.12,
+  "invalid_date_rows": 2,
+  "future_rows": 1,
+  "distinct_order_ids": 2000,
+  "dimension_rows": {
+    "dim_user": 80,
+    "dim_product": 30
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "seed": 20260517,
+  "generated_at": "2026-11-05T22:50:38+08:00",
+  "n_users": 80,
+  "n_products": 30,
+  "n_base_orders": 2000,
+  "source_order_rows": 2002,
+  "dirty_order_count": 34,
+  "dirty_order_ids": [
+    "O000074",
+    "O000128",
+    "O000163",
+    "O000168",
+    "O000321",
+    "O000353",
+    "O000420",
+    "O000486",
+    "O000537",
+    "O000546",
+    "O000559",
+    "O000583",
+    "O000671",
+    "O000686",
+    "O000744",
+    "O000746",
+    "O000770",
+    "O000805",
+    "O000841",
+    "O000858",
+    "O000986",
+    "O001166",
+    "O001257",
+    "O001267",
+    "O001327",
+    "O001331",
+    "O001468",
+    "O001487",
+    "O001498",
+    "O001547",
+    "O001728",
+    "O001772",
+    "O001923",
+    "O001941"
+  ],
+  "duplicate_source_rows": 2,
+  "defects": {
+    "null_user_id": {
+      "count": 6,
+      "keys": [
+        "O000858",
+        "O000353",
+        "O000074",
+        "O000746",
+        "O000559",
+        "O000546"
+      ]
+    },
+    "null_product_id": {
+      "count": 4,
+      "keys": [
+        "O001257",
+        "O001166",
+        "O001923",
+        "O001327"
+      ]
+    },
+    "duplicate_order_id": {
+      "count": 2,
+      "keys": [
+        "O000537",
+        "O000168"
+      ]
+    },
+    "invalid_order_status": {
+      "count": 4,
+      "keys": [
+        "O000128",
+        "O000686",
+        "O000986",
+        "O001941"
+      ]
+    },
+    "negative_amount": {
+      "count": 3,
+      "keys": [
+        "O000671",
+        "O001498",
+        "O000321"
+      ]
+    },
+    "amount_mismatch": {
+      "count": 5,
+      "keys": [
+        "O000420",
+        "O000486",
+        "O000163",
+        "O001468",
+        "O000805"
+      ]
+    },
+    "orphan_user_id": {
+      "count": 4,
+      "keys": [
+        "O001331",
+        "O001487",
+        "O001547",
+        "O000744"
+      ]
+    },
+    "orphan_product_id": {
+      "count": 3,
+      "keys": [
+        "O000583",
+        "O001772",
+        "O001728"
+      ]
+    },
+    "invalid_order_time": {
+      "count": 2,
+      "keys": [
+        "O000770",
+        "O000841"
+      ]
+    },
+    "future_order_time": {
+      "count": 1,
+      "keys": [
+        "O001267"
+      ]
+    }
+  },
+  "dimension_defect": {
+    "product_id": "P0007",
+    "source_category": "数码",
+    "dim_category": "家电",
+    "count": 1
+  }
+}

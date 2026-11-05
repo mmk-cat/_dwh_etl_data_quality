@@ -1,0 +1,302 @@
+{
+  "rules": [
+    {
+      "rule_code": "ODS_ORDER_USER_NOT_NULL",
+      "hits": 6,
+      "sample": [
+        {
+          "record_key": "O000074",
+          "detail": "user_id is null/blank"
+        },
+        {
+          "record_key": "O000353",
+          "detail": "user_id is null/blank"
+        },
+        {
+          "record_key": "O000546",
+          "detail": "user_id is null/blank"
+        },
+        {
+          "record_key": "O000559",
+          "detail": "user_id is null/blank"
+        },
+        {
+          "record_key": "O000746",
+          "detail": "user_id is null/blank"
+        }
+      ]
+    },
+    {
+      "rule_code": "ODS_ORDER_PRODUCT_NOT_NULL",
+      "hits": 4,
+      "sample": [
+        {
+          "record_key": "O001166",
+          "detail": "product_id is null/blank"
+        },
+        {
+          "record_key": "O001257",
+          "detail": "product_id is null/blank"
+        },
+        {
+          "record_key": "O001327",
+          "detail": "product_id is null/blank"
+        },
+        {
+          "record_key": "O001923",
+          "detail": "product_id is null/blank"
+        }
+      ]
+    },
+    {
+      "rule_code": "ODS_ORDER_ID_NOT_NULL",
+      "hits": 0,
+      "sample": []
+    },
+    {
+      "rule_code": "ODS_ORDER_QTY_NOT_NULL",
+      "hits": 0,
+      "sample": []
+    },
+    {
+      "rule_code": "ODS_ORDER_AMOUNT_NOT_NULL",
+      "hits": 0,
+      "sample": []
+    },
+    {
+      "rule_code": "ODS_ORDER_TIME_NOT_NULL",
+      "hits": 0,
+      "sample": []
+    },
+    {
+      "rule_code": "ODS_ORDER_ID_UNIQUE",
+      "hits": 2,
+      "sample": [
+        {
+          "record_key": "O000537",
+          "detail": "duplicate order_id"
+        },
+        {
+          "record_key": "O000168",
+          "detail": "duplicate order_id"
+        }
+      ]
+    },
+    {
+      "rule_code": "ODS_USER_ID_UNIQUE",
+      "hits": 0,
+      "sample": []
+    },
+    {
+      "rule_code": "ODS_PRODUCT_ID_UNIQUE",
+      "hits": 0,
+      "sample": []
+    },
+    {
+      "rule_code": "ODS_ORDER_STATUS_ENUM",
+      "hits": 4,
+      "sample": [
+        {
+          "record_key": "O000128",
+          "detail": "invalid order_status",
+          "source_value": "unknown_status"
+        },
+        {
+          "record_key": "O000686",
+          "detail": "invalid order_status",
+          "source_value": "unknown_status"
+        },
+        {
+          "record_key": "O000986",
+          "detail": "invalid order_status",
+          "source_value": "unknown_status"
+        },
+        {
+          "record_key": "O001941",
+          "detail": "invalid order_status",
+          "source_value": "unknown_status"
+        }
+      ]
+    },
+    {
+      "rule_code": "ODS_CHANNEL_ENUM",
+      "hits": 0,
+      "sample": []
+    },
+    {
+      "rule_code": "ODS_USER_STATUS_ENUM",
+      "hits": 0,
+      "sample": []
+    },
+    {
+      "rule_code": "ODS_ORDER_AMOUNT_POSITIVE",
+      "hits": 3,
+      "sample": [
+        {
+          "record_key": "O000321",
+          "detail": "amount <= 0"
+        },
+        {
+          "record_key": "O000671",
+          "detail": "amount <= 0"
+        },
+        {
+          "record_key": "O001498",
+          "detail": "amount <= 0"
+        }
+      ]
+    },
+    {
+      "rule_code": "ODS_ORDER_QTY_POSITIVE",
+      "hits": 0,
+      "sample": []
+    },
+    {
+      "rule_code": "ODS_ORDER_AMOUNT_CONSISTENT",
+      "hits": 8,
+      "sample": [
+        {
+          "record_key": "O000163",
+          "detail": "amount != quantity * unit_price"
+        },
+        {
+          "record_key": "O000321",
+          "detail": "amount != quantity * unit_price"
+        },
+        {
+          "record_key": "O000420",
+          "detail": "amount != quantity * unit_price"
+        },
+        {
+          "record_key": "O000486",
+          "detail": "amount != quantity * unit_price"
+        },
+        {
+          "record_key": "O000671",
+          "detail": "amount != quantity * unit_price"
+        }
+      ]
+    },
+    {
+      "rule_code": "ODS_ORDER_PRICE_RANGE",
+      "hits": 0,
+      "sample": []
+    },
+    {
+      "rule_code": "ODS_ORDER_USER_EXISTS",
+      "hits": 4,
+      "sample": [
+        {
+          "record_key": "O000744",
+          "detail": "user_id not found"
+        },
+        {
+          "record_key": "O001331",
+          "detail": "user_id not found"
+        },
+        {
+          "record_key": "O001487",
+          "detail": "user_id not found"
+        },
+        {
+          "record_key": "O001547",
+          "detail": "user_id not found"
+        }
+      ]
+    },
+    {
+      "rule_code": "ODS_ORDER_PRODUCT_EXISTS",
+      "hits": 3,
+      "sample": [
+        {
+          "record_key": "O000583",
+          "detail": "product_id not found"
+        },
+        {
+          "record_key": "O001728",
+          "detail": "product_id not found"
+        },
+        {
+          "record_key": "O001772",
+          "detail": "product_id not found"
+        }
+      ]
+    },
+    {
+      "rule_code": "ODS_ORDER_TIME_FORMAT",
+      "hits": 2,
+      "sample": [
+        {
+          "record_key": "O000770",
+          "detail": "invalid order_time format/calendar"
+        },
+        {
+          "record_key": "O000841",
+          "detail": "invalid order_time format/calendar"
+        }
+      ]
+    },
+    {
+      "rule_code": "ODS_ORDER_TIME_NOT_FUTURE",
+      "hits": 1,
+      "sample": [
+        {
+          "record_key": "O001267",
+          "detail": "future order_time"
+        }
+      ]
+    },
+    {
+      "rule_code": "DIM_PRODUCT_CATEGORY_MATCH",
+      "hits": 1,
+      "sample": [
+        {
+          "record_key": "P0007",
+          "detail": "category mismatch",
+          "source_value": "数码",
+          "dim_value": "家电"
+        }
+      ]
+    },
+    {
+      "rule_code": "DWD_ORDER_AMOUNT_NONNEGATIVE",
+      "hits": 3,
+      "sample": [
+        {
+          "record_key": "O000321",
+          "detail": "dwd amount < 0"
+        },
+        {
+          "record_key": "O000671",
+          "detail": "dwd amount < 0"
+        },
+        {
+          "record_key": "O001498",
+          "detail": "dwd amount < 0"
+        }
+      ]
+    },
+    {
+      "rule_code": "DWS_DAILY_GMV_RECONCILE",
+      "hits": 0,
+      "sample": []
+    },
+    {
+      "rule_code": "DWS_DOD_GMV_THRESHOLD",
+      "hits": 2,
+      "sample": [
+        {
+          "record_key": "2099-01-01",
+          "detail": "day-over-day change exceeds 50%",
+          "change_pct": "-99.76"
+        },
+        {
+          "record_key": "INVALID",
+          "detail": "day-over-day change exceeds 50%",
+          "change_pct": "530.14"
+        }
+      ]
+    }
+  ],
+  "total_hits": 43
+}

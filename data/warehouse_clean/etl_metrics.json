@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-11-05T22:50:38+08:00",
+  "orders_path": "data\\quarantine\\ods_orders_clean.csv",
+  "warehouse_dir": "data\\warehouse_clean",
+  "source_order_rows": 1966,
+  "dwd_rows": 1966,
+  "dws_daily_rows": 70,
+  "dws_channel_rows": 42,
+  "dwd_gmv": 5057941.48,
+  "invalid_date_rows": 0,
+  "future_rows": 0,
+  "distinct_order_ids": 1966,
+  "dimension_rows": {
+    "dim_user": 80,
+    "dim_product": 30
+  }
+}
